@@ -13,6 +13,16 @@
             color: #EDEDED;
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             font-size: 16.5pt;
+            transition: height 0.3s ease;
+        }
+
+        .arrow {
+            transition: transform 0.3s ease;
+            transform-origin: center;
+        }
+
+        .rotated {
+            transform: rotate(180deg);
         }
 
         .img {
@@ -237,10 +247,11 @@
             <div class="gray3 razm2 anim" style="margin-top: 0px;">
                 <div class="text2 otsu anim">Начало игры</div>
                 <div class="textt otsd razm anim" style="height: 75px;overflow: hidden;"
-                    onclick="this.style.height = (this.style.height == '75px'? '240px' : '75px')">
+                    data-expanded-height="240px"
+                    onclick="if (this.style.height === '75px') { this.style.height = this.dataset.expandedHeight; this.nextElementSibling.classList.add('rotated'); } else { this.style.height = '75px'; this.nextElementSibling.classList.remove('rotated'); }">
                     Чтобы попасть на сервер вам нужно заполнить заявку на которую ведёт кнопка "Регистрация" и поставить
                     сборку на Fabric 1.21.1
-                    если вы не разбираетесь в модах или же не готовы заморачиватся с новой сборкой то поставьте ЭТО, 
+                    если вы не разбираетесь в модах или же не готовы заморачиватся с новой сборкой то поставьте ЭТО,
                     оно полность заменяет оптифайн (т. е. там есть моды на оптимизацию, шейдеры, ресурспаки).
                     Если вы разбираетесь в модах то скачайте ЭТО, добавьте это к своей сборке, это минимум для
                     игры на сервере но на всякий случий советую проверить их на конфликтность с модами из вашей сборки.
@@ -251,7 +262,7 @@
                     скинах
                     tlauncher.
                 </div>
-                <div class="anim" style="font-family: marlett; color: #EDEDED; font-size: 20pt; width: 965px; text-align: left; padding-left: 35px;">6</div>
+                <div class="anim arrow" style="color: #EDEDED; font-size: 16pt; width: 965px; text-align: left; padding-left: 35px;">▼</div>
             </div>
             <div class="gray3 razm2 anim">
                 <div class="text2 otsu anim">Скины</div>
@@ -266,25 +277,27 @@
             <div class="gray3 razm2 anim">
                 <div class="text2 otsu anim">Правила</div>
                 <div class="textt otsd razm anim" style="height: 75px;overflow: hidden;"
-                    onclick="this.style.height = (this.style.height == '75px'? '95px' : '75px')">
+                    data-expanded-height="95px"
+                    onclick="if (this.style.height === '75px') { this.style.height = this.dataset.expandedHeight; this.nextElementSibling.classList.add('rotated'); } else { this.style.height = '75px'; this.nextElementSibling.classList.remove('rotated'); }">
                     Запрещены читы по тупу килауры, вы можете поставить что-то по типу X-Ray но
-                    сомневаюсь что это как-то поможет ведь на сервере стоит AntiXray. Можно поставить бота по типу 
-                    Baritone(я и самего использую) но из-за AntiXray с добычей руд будут проблемы. Приватов на 
+                    сомневаюсь что это как-то поможет ведь на сервере стоит AntiXray. Можно поставить бота по типу
+                    Baritone(я и самего использую) но из-за AntiXray с добычей руд будут проблемы. Приватов на
                     сервере нет, но гриферить не надо, нам ведь не ну на война маштабов всего сервера, так ведь?
                 </div>
-                <div class="anim" style="font-family: marlett; color: #EDEDED; font-size: 20pt; width: 965px; text-align: left; padding-left: 35px;">6</div>
+                <div class="anim arrow" style="color: #EDEDED; font-size: 16pt; width: 965px; text-align: left; padding-left: 35px;">▼</div>
             </div>
             <div class="gray3 razm2 anim">
                 <div class="text2 otsu anim">Дискорд</div>
                 <div class="textt otsd razm anim" style="height: 75px;overflow: hidden;"
-                    onclick="this.style.height = (this.style.height == '75px'? '90px' : '75px')">
+                    data-expanded-height="90px"
+                    onclick="if (this.style.height === '75px') { this.style.height = this.dataset.expandedHeight; this.nextElementSibling.classList.add('rotated'); } else { this.style.height = '75px'; this.nextElementSibling.classList.remove('rotated'); }">
                     Кроме общения через саму игру есть дискорд сервер (присутствовать обязятельно). Разделение на
                     каналы:
                     каналы "для всех" куда могут писать все (форум и войс тоже), "для игроков" куда могут писать только
                     игроки и
                     "для игроков приватные" как для игроков но то что там происходит видно только игрокам
                 </div>
-                <div class="anim" style="font-family: marlett; color: #EDEDED; font-size: 20pt; width: 965px; text-align: left; padding-left: 35px;">6</div>
+                <div class="anim arrow" style="color: #EDEDED; font-size: 16pt; width: 965px; text-align: left; padding-left: 35px;">▼</div>
             </div>
         </div>
     </div>
