@@ -1,0 +1,186 @@
+.textt {
+    width: 1015px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #EDEDED;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16.5pt;
+    transition: height 0.3s ease;
+}
+
+.arrow {
+    transition: transform 0.3s ease;
+    transform-origin: center;
+}
+
+.rotated {
+    transform: rotate(180deg);
+}
+
+.img {
+    width: 500px;
+}
+
+.img2 {
+    width: 319px;
+    padding: 10px 7px;
+    position: relative;
+    transition: transform 0.35s ease;
+    -webkit-transition: transform 0.35s ease;
+}
+
+.img2:hover {
+    transform: scale(1.254);
+    z-index: 100;
+}
+
+.description {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.jt {
+    color: #EDEDED;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14pt;
+}
+
+.text {
+    color: #EDEDED;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15.5pt;
+}
+
+.text2 {
+    color: #00c700;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 26.25pt;
+}
+
+.text3 {
+    color: #707070;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 13.5pt;
+}
+
+.bgc {
+    background-color: #161616;
+}
+
+.gray2 {
+    background-color: rgb(32, 32, 32);
+}
+
+.gray3 {
+    background-color: rgb(42, 42, 42);
+}
+
+.gray4 {
+    background-color: #343434;
+}
+
+.tl {
+    text-align: left;
+    padding-left: 15px;
+}
+
+.tr {
+    text-align: right;
+    padding-right: 15px;
+}
+
+.otsu {
+    padding-top: 10px;
+}
+
+.otsd {
+    padding-bottom: 15px;
+}
+
+.razm {
+    width: 965px;
+}
+
+.razm2 {
+    width: 1015px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    overflow: hidden;
+}
+
+.anim {
+    opacity: 0;
+}
+
+.anims {
+    animation: anim linear forwards;
+    animation-duration: 0.75s;
+
+}
+
+@keyframes anim {
+    0% {
+        opacity: 0;
+        transform: translateY(2vh);
+    }
+
+    25% {
+        transform: translateY(1vh);
+    }
+
+    75% {
+        transform: translateY(0vh);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.startanim {
+    animation: anim1 linear forwards;
+    animation-duration: 0.5s;
+}
+
+@keyframes anim1 {
+    0% {
+        background-position-y: top;
+    }
+
+    100% {
+        background-position-y: center;
+    }
+}
+
+.startanim2 {
+    animation: anim2 linear forwards;
+    animation-duration: 0.5s;
+}
+
+a {
+    color: #1b96e7;
+    text-decoration: underline;
+}
+
+@keyframes anim2 {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        transform: translateY(2vh);
+    }
+
+    75% {
+        transform: translateY(0vh);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

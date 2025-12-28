@@ -4,181 +4,11 @@
 <head>
     <title>UniverseCraft</title>
     <link rel="icon" href="index.files/Logo to browser.png">
-
-    <style>
-        .textt {
-            width: 1015px;
-            margin-left: auto;
-            margin-right: auto;
-            color: #EDEDED;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            font-size: 16.5pt;
-            transition: height 0.3s ease;
-        }
-
-        .arrow {
-            transition: transform 0.3s ease;
-            transform-origin: center;
-        }
-
-        .rotated {
-            transform: rotate(180deg);
-        }
-
-        .img {
-            width: 500px;
-        }
-        .img2{
-            width: 319px;
-            padding: 10px 7px;
-            
-        }
-
-        .description {
-            text-align: center;
-            padding-top: 30px;
-            padding-bottom: 30px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .text {
-            color: #EDEDED;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            font-size: 15.5pt;
-        }
-
-        .text2 {
-            color: #00c700;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            font-size: 26.25pt;
-        }
-
-        .text3 {
-            color: #707070;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            font-size: 13.5pt;
-        }
-
-
-        .gray2 {
-            background-color: #202020;
-        }
-
-        .gray3 {
-            background-color: #2a2a2a;
-        }
-
-        .gray4 {
-            background-color: #343434;
-        }
-
-        .tl {
-            text-align: left;
-            padding-left: 15px;
-        }
-
-        .tr {
-            text-align: right;
-            padding-right: 15px;
-        }
-
-        .otsu {
-            padding-top: 10px;
-        }
-
-        .otsd {
-            padding-bottom: 15px;
-        }
-
-        .razm {
-            width: 965px;
-        }
-
-        .razm2 {
-            width: 1015px;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 25px;
-            overflow: hidden;
-        }
-
-        .anim {
-            opacity: 0;
-        }
-
-        .anims {
-            animation: anim linear forwards;
-            animation-duration: 0.75s;
-
-        }
-
-        @keyframes anim {
-            0% {
-                opacity: 0;
-                transform: translateY(2vh);
-            }
-
-            25% {
-                transform: translateY(1vh);
-            }
-
-            75% {
-                transform: translateY(0vh);
-            }
-
-            100% {
-                opacity: 1;
-            }
-        }
-
-        .startanim {
-            animation: anim1 linear forwards;
-            animation-duration: 0.5s;
-        }
-
-        @keyframes anim1 {
-            0% {
-                background-position-y: top;
-            }
-
-            100% {
-                background-position-y: center;
-            }
-        }
-
-        .startanim2 {
-            animation: anim2 linear forwards;
-            animation-duration: 0.5s;
-        }
-
-        a {
-            color: #3192e0;
-            text-decoration: underline;
-        }
-
-        @keyframes anim2 {
-            0% {
-                opacity: 0;
-            }
-
-            25% {
-                transform: translateY(2vh);
-            }
-
-            75% {
-                transform: translateY(0vh);
-            }
-
-            100% {
-                opacity: 1;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
-<body style="margin-left: auto;margin-right: auto;text-align: center; min-width: 1015px;text-align: center;background-color: #202020;">
+<body
+    style="margin-left: auto;margin-right: auto;text-align: center; min-width: 1015px;text-align: center;background-color: #161616;">
     <div class="startanim"
         style="text-align: center;height: 1080px;background: url('index.files/Minecraft Screenshot 2025.10.28 - 00.00.44.65_cr.jpg');">
         <div class="text startanim2"
@@ -260,13 +90,13 @@
             <div class="gray2" style="height: 10px;"></div>
             <div class="text2 anim">Галерея</div>
             <div class="gray2" style="height: 5px;"></div>
-            <div style="width: 1015px;margin-left: auto;margin-right: auto;">
-                <img class="img2 anim" src="index.files/Minecraft Screenshot 2025.12.27 - 22.31.50.55_cr.jpg">
-                <img class="img2 anim" src="index.files/Minecraft Screenshot 2025.10.28 - 00.10.54.48_cr.jpg">
-                <img class="img2 anim" src="index.files/Minecraft Screenshot 2025.12.27 - 22.53.55.67_cr.jpg">
-                <img class="img2 anim" src="index.files/Minecraft Screenshot 2025.12.27 - 22.33.07.46_cr.jpg">
-                <img class="img2 anim" src="index.files/Minecraft Screenshot 2025.12.27 - 22.34.54.75_cr.jpg">
-                <img class="img2 anim" src="index.files/Minecraft Screenshot 2025.12.27 - 22.50.15.76_cr.jpg">
+            <div class="anim" style="width: 1015px;margin-left: auto;margin-right: auto;">
+                <img class="img2" src="index.files/Minecraft Screenshot 2025.12.27 - 22.31.50.55_cr.jpg">
+                <img class="img2" src="index.files/Minecraft Screenshot 2025.10.28 - 00.10.54.48_cr.jpg">
+                <img class="img2" src="index.files/Minecraft Screenshot 2025.12.27 - 22.53.55.67_cr.jpg">
+                <img class="img2" src="index.files/Minecraft Screenshot 2025.12.27 - 22.33.07.46_cr.jpg">
+                <img class="img2" src="index.files/Minecraft Screenshot 2025.12.27 - 22.34.54.75_cr.jpg">
+                <img class="img2" src="index.files/Minecraft Screenshot 2025.12.27 - 22.50.15.76_cr.jpg">
             </div>
             <div class="gray2" style="height: 10px;"></div>
         </div>
@@ -276,10 +106,12 @@
                 <div class="text2 otsu anim">Начало игры</div>
                 <div class="textt otsd razm anim" style="height: 75px;overflow: hidden;" data-expanded-height="190px">
                     Чтобы попасть на сервер вам нужно заполнить заявку на которую ведёт кнопка "Регистрация" и поставить
-                    сборку на Fabric 1.21.10если вы не разбираетесь в модах или же не готовы заморачиватся с новой сборкой
+                    сборку на Fabric 1.21.10если вы не разбираетесь в модах или же не готовы заморачиватся с новой
+                    сборкой
                     то поставьте <a href="Сбоки_модов/Сборка.zip" download>ЭТО</a>,
                     оно полность заменяет оптифайн (т. е. там есть моды на оптимизацию, шейдеры, ресурспаки).
-                    Если вы разбираетесь в модах то скачайте <a href="Сбоки_модов/Минимальная_сборка.zip" download>ЭТО</a>, добавьте это к своей сборке, это минимум для
+                    Если вы разбираетесь в модах то скачайте <a href="Сбоки_модов/Минимальная_сборка.zip"
+                        download>ЭТО</a>, добавьте это к своей сборке, это минимум для
                     игры на сервере но на всякий случий советую проверить их на конфликтность с модами из вашей сборки.
                     Если при запуске у вас автоматически ставится каокй либо мод как в TLauncher ставится tlauncher skin
                     capes их нужно отключить.
@@ -287,23 +119,28 @@
                 <div class="anim arrow"
                     style="color: #EDEDED; font-size: 14pt; width: 965px; text-align: left; padding: 5px 35px">▼</div>
             </div>
-            <div class="gray4 razm2 anim">
+            <div class="gray4 razm2 anim" onclick="toggleBlock(this)">
                 <div class="text2 otsu anim">Скины</div>
-                <div class="textt otsd razm anim">
+                <div class="textt otsd razm anim" style="height: 75px;overflow: hidden;" data-expanded-height="115px">
                     На счёт Custom Skin Loader, вы можете поставить скин локально но тогда его не будет видно остальным
                     игрокам,
-                    лучше поставить его на каком либо из сайтов <a href="https://modrinth.com/mod/customskinloader">
-                    (подробности на странице мода)</a> лично я использую <a href="https://skin.prinzeugen.net/">
-                    BlessingSkins</a> (если попробуете загуглить то найдёте не то что надо)
+                    лучше поставить его на каком либо из сайтов (<a href="https://modrinth.com/mod/customskinloader">
+                    подробности на странице мода</a>) лично я использую <a href="https://skin.prinzeugen.net/">
+                    BlessingSkins</a> (если попробуете загуглить то найдёте не то что надо). Учтите что при 
+                    проверке заявки скины тоже проверяются, они не должны повторяться со скинами других игроков 
+                    или быть пошлыми.
                 </div>
+                <div class="anim arrow"
+                    style="color: #EDEDED; font-size: 14pt; width: 965px; text-align: left; padding: 5px 35px">▼</div>
             </div>
             <div class="gray4 razm2 anim" onclick="toggleBlock(this)">
                 <div class="text2 otsu anim">Правила</div>
-                <div class="textt otsd razm anim" style="height: 75px;overflow: hidden;" data-expanded-height="95px">
-                    Запрещены читы по тупу килауры, вы можете поставить что-то по типу X-Ray но
-                    сомневаюсь что это как-то поможет ведь на сервере стоит AntiXray. Можно поставить бота по типу
-                    Baritone(я и самего использую) но из-за AntiXray с добычей руд будут проблемы. Приватов на
-                    сервере нет, но гриферить не надо, нам ведь не ну на война маштабов всего сервера, так ведь?
+                <div class="textt otsd razm anim" style="height: 75px;overflow: hidden;" data-expanded-height="115px">
+                    Запрещены читы по тупу киллауры. X-Ray будет бесполезен как-то ведь на сервере стоит AntiXray. 
+                    Можно поставить бота по типу Baritone(я и самего использовал) но из-за AntiXray с добычей руд 
+                    будут проблемы, или можно поставить что либо что могут отоброжат больше вещей, например 
+                    ViewTrajectry. Приватов насервере нет, но гриферить не надо, будут разбирательства, в кайнем 
+                    случае бан.
                 </div>
                 <div class="anim arrow"
                     style="color: #EDEDED; font-size: 14pt; width: 965px; text-align: left; padding: 5px 35px">▼</div>
@@ -328,79 +165,98 @@
                 <div class="text2 otsu anim">Как поставить моды?</div>
                 <div class="textt otsd razm anim" style="height: 75px;overflow: hidden;" data-expanded-height="175px">
                     Чтобы поставить моды их надо положить в папку mods. Только вот есть она не всегда, ванильный
-                    майнкрат не приспособленк установке модов (их можно поставить но это сложно, никогда сам не 
-                    ставил моды на ванилу), в этой сборке используетсяядро Fabric (версия: 1.21.10). Если у вас 
-                    лаунчер во котором можно можно на прямую скачать это ядро то не парьтесь, если у вас не такой 
-                    лаунчеро то: скачайте установщик Fabric, укажите путь в папку с профилем лаунчера (если это 
-                    непроизошло автоматически, как у меня) и устаеовите. После установкм найдите папку с версией, 
+                    майнкрат не приспособленк установке модов (их можно поставить но это сложно, никогда сам не
+                    ставил моды на ванилу), в этой сборке используетсяядро Fabric (версия: 1.21.10). Если у вас
+                    лаунчер во котором можно можно на прямую скачать это ядро то не парьтесь, если у вас не такой
+                    лаунчеро то: скачайте установщик Fabric, укажите путь в папку с профилем лаунчера (если это
+                    непроизошло автоматически, как у меня) и устаеовите. После установкм найдите папку с версией,
                     там должна быть папка mods, положите моды в неё.
                 </div>
                 <div class="anim arrow"
                     style="color: #EDEDED; font-size: 14pt; width: 965px; text-align: left; padding: 5px 35px">▼</div>
             </div>
-             <div class="gray3 razm2 anim" style="margin-top: 25px;">
-                <div class="text2 otsu anim">Не работает дискорд?</div>
-                <div class="textt otsd razm anim" style="height: 75px;overflow: hidden;">
-                    Явная проблема это то что Дискорд не работает в россии, это можно исправить при помощи
-                    <a href="index.files/zapret-discord-youtube-1.9.1.zip" download>zapret</a> (можно  
-                    <a href="https://github.com/Flowseal/zapret-discord-youtube/releases/tag/1.9.1">скачать</a> 
-                    с гитхаба). Нужно распоковать архив, запустить service.bat, подобрать режим (в разделе
-                    instal service) с которым дискорд работает. Для работы дискорда этого хватит.
+            <div class="gray3 razm2 anim" onclick="toggleBlock(this)">
+                <div class="text2 otsu anim">Как настроить скин на BlassingSkins?</div>
+                <div class="textt otsd razm anim" style="height: 75px;overflow: hidden;" data-expanded-height="145px">
+                    Если вы как и я решили поставить свой скин через BlessingSkins то вот как эт оделается. Вам 
+                    нужно зарегестрироваться на сайте и указать свой ник, учтите что если туда придёт человек 
+                    с таким же ником но с лицензией то решение примут в его сторону. Дальше вам надо поставить
+                    скин и по желанию плащ, можно выбрать скин из библиотеки, просто возьмите какой понравился, 
+                    можно загрузить свой, вам нужна развёртка скина в формате .png, нажмите кнопку загрузить и 
+                    выберете файл.
                 </div>
+                <div class="anim arrow"
+                    style="color: #EDEDED; font-size: 14pt; width: 965px; text-align: left; padding: 5px 35px">▼</div>
             </div>
+            <div class="gray3 razm2 anim" onclick="toggleBlock(this)">
+                <div class="text2 otsu anim">Как настроить голосовой чат?</div>
+                <div class="textt otsd razm anim" style="height: 75px;overflow: hidden;" data-expanded-height="115px">
+                    У вс должны быть подключены устройства вывода и ввода, при захде на сервере вам высветится
+                    сообщение о том чт онадо нажать V для настройки(если не перенастроено). Вам нужно зайти в
+                    настройки, выбрать устройства вывода и ввода, выбрать активацию о голосу или по голосу или
+                    при нажатии кнопки (если при нажатии кнопи то указать её) этого будет достаточно. Остальные
+                    настройки на <a href="https://modrinth.com/plugin/simple-voice-chat/versions">странице мода</a>.
+                </div>
+                <div class="anim arrow"
+                    style="color: #EDEDED; font-size: 14pt; width: 965px; text-align: left; padding: 5px 35px">▼</div>
+            </div>
+            <div class="gray2" style="height: 25px;"></div>
         </div>
-    </div>
-    <script>
-        function toggleBlock(element) {
-            let textt = element.querySelector('.textt');
-            let arrow = element.querySelector('.arrow');
-            if (textt.style.height === '75px') {
-                textt.style.height = textt.dataset.expandedHeight;
-                arrow.classList.add('rotated');
-            } else {
-                textt.style.height = '75px';
-                arrow.classList.remove('rotated');
+        <div style="width: 1015px;margin-left: auto;margin-right: auto;">
+            <div class="bgc" style="height: 25px;"></div>
+            <div style="text-align: left;">
+                <img class="anim" src="index.files/UniverseCraft Logo jpeg_1080_1080.jpg" style="height: 25px;">
+                <span class="jt anim" style="font-size: 21pt;">UniverseCraft</span>
+            </div>
+            <div class="bgc" style="height: 10px;"></div>
+            <div class="jt anim" style="text-align: left;">
+                Сайт сделан одним человеком и очевидно не идеален. Если вы тоже разработчик и у вас есть идеи как
+                улучшить сайт, вот <a href="">ссылка</a> на гитхаб
+            </div>
+            <div class="bgc" style="height: 25px;"></div>
+        </div>
+        <script>
+            function toggleBlock(element) {
+                let textt = element.querySelector('.textt');
+                let arrow = element.querySelector('.arrow');
+                if (textt.style.height === '75px') {
+                    textt.style.height = textt.dataset.expandedHeight;
+                    arrow.classList.add('rotated');
+                } else {
+                    textt.style.height = '75px';
+                    arrow.classList.remove('rotated');
+                }
             }
-        }
 
-        document.addEventListener('DOMContentLoaded', () => {
 
-            // 1. Находим все целевые элементы по классу
-            // querySelectorAll возвращает статичный NodeList, который легко перебирать.
-            const elements = document.querySelectorAll('.anim');
+            document.addEventListener('DOMContentLoaded', () => {
 
-            // Если элементы не найдены, выходим
-            if (elements.length === 0.1) return;
+                const elements = document.querySelectorAll('.anim');
 
-            // 2. Определяем функцию обратного вызова (callback)
-            // Эта функция универсальна для всех элементов
-            const observerCallback = (entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        // Добавляем класс к конкретному элементу, который сейчас в зоне видимости
-                        entry.target.classList.add('anims');
-                        // Прекращаем наблюдение за этим конкретным элементом
-                        observer.unobserve(entry.target);
-                    }
+                if (elements.length === 0.1) return;
+
+                const observerCallback = (entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('anims');
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                };
+
+                const observerOptions = {
+                    root: null,
+                    rootMargin: '0px',
+                    threshold: 0.1
+                };
+
+                const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+                elements.forEach(element => {
+                    observer.observe(element);
                 });
-            };
-
-            // 3. Определяем опции для наблюдателя
-            const observerOptions = {
-                root: null,
-                rootMargin: '0px',
-                threshold: 0.1
-            };
-
-            // 4. Создаем ЕДИНЫЙ экземпляр IntersectionObserver
-            const observer = new IntersectionObserver(observerCallback, observerOptions);
-
-            // 5. Запускаем наблюдение для КАЖДОГО элемента в списке
-            elements.forEach(element => {
-                observer.observe(element);
             });
-        });
-    </script>
+        </script>
 </body>
 
 </html>
