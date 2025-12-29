@@ -9,18 +9,38 @@
 
 <body class="bgc"
     style="margin-left: auto;margin-right: auto;text-align: center; min-width: 1015px;text-align: center;">
-    <div class="startanim"
+    <div class="gray2" style="height: 37px;width: 100%;position: fixed;top: 0px;z-index: 2; background-color: #252525;">
+        <div style="width: 1015px; margin-left: auto; margin-right: auto;display: flex; justify-content: center;">
+            <div style="text-align: left;width: 250px;">
+                <img src="index.files/UniverseCraft Logo jpeg_1080_1080.jpg" style="height: 25px;padding-top: 3px;">
+                <span class="text" style="font-size: 25px;padding-bottom: 15px;">UniverseCraft</span>
+            </div>
+            <div style="text-align: right; width: 765px;padding-top: 7px;">
+                <a class="ssilk" href="#osn">Главная</a>
+                <a class="ssilk" href="#descript">Описание</a>
+                <a class="ssilk" href="#galler">Галерея</a>
+                <a class="ssilk" href="#game">Начало игры</a>
+                <a class="ssilk" href="#voprosi">Отсвашиеся вопросы</a>
+                <a class="text" href="registrate.htm"><span class="button text" style="border-style: solid; border-width: 2px; 
+                border-radius: 5px; padding: 2px 5px; font-size: 19px;">
+                    Регистрация</span></a>
+            </div>
+        </div>
+    </div>
+    <div class="gray4" style="width: 100%; height: 2px; z-index: 3; position: fixed;top: 34px;"></div>
+    <div class="startanim" id="osn"
         style="text-align: center;height: 1080px;background: url('index.files/Minecraft Screenshot 2025.10.28 - 00.00.44.65_cr.jpg');">
         <div class="text startanim2"
             style="color: #EDEDED;padding-top: 375px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 87pt;">
             UniverseCraft </div>
-        <div class="text anim" style="color: #EDEDED;font-family: Arial, Helvetica, sans-serif; font-size: 35pt;">
+        <div class="text startanim3" style="color: #EDEDED;font-family: Arial, Helvetica, sans-serif; font-size: 35pt;margin-top: -25px;">
             Присоеденяйтесь к нам!
         </div>
         <a href="registrate.htm" style="color: #EDEDED;">
             <div class="anim button" style="border-style: solid; border-width: 3px; border-radius: 10px;
                 width: 250px; height: 70px; margin: 3px auto;">
-                <div class="text" style="font-size: 28pt;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin-top: 5.5pt;;">Регистрация</div>    
+                <div class="text" style="font-size: 28pt;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin-top: 5.5pt;;">
+                Регистрация</div>    
             </div>
         </a>
     </div>
@@ -35,7 +55,7 @@
         </div>
         <div class="gray3" style="height: 7px;"></div>
         <div class="gray3">
-            <div class="text2 anim">Чем хорош UniverseCraft?</div>
+            <div class="text2 anim" id="descript">Чем хорош UniverseCraft?</div>
         </div>
         <div class="gray3 description eshyo">
             <div class="img tr">
@@ -94,7 +114,7 @@
         </div>
         <div class="gray2">
             <div class="gray2" style="height: 10px;"></div>
-            <div class="text2 anim">Галерея</div>
+            <div class="text2 anim" id="galler">Галерея</div>
             <div class="gray2" style="height: 5px;"></div>
             <div class="anim" style="width: 1015px;margin-left: auto;margin-right: auto;">
                 <img class="img2" src="index.files/Minecraft Screenshot 2025.12.27 - 22.31.50.55_cr.jpg">
@@ -106,7 +126,7 @@
             </div>
             <div class="gray2" style="height: 10px;"></div>
         </div>
-        <div class="gray3">
+        <div class="gray3" id="game">
             <div class="gray3" style="height: 25px;"></div>
             <div class="gray4 razm2 anim" style="margin-top: 0px;" onclick="toggleBlock(this)">
                 <div class="text2 otsu anim">Начало игры</div>
@@ -142,7 +162,7 @@
             <div class="gray4 razm2 anim" onclick="toggleBlock(this)">
                 <div class="text2 otsu anim">Правила</div>
                 <div class="textt otsd razm anim" style="height: 75px;overflow: hidden;" data-expanded-height="115px">
-                    Запрещены читы по тупу КиллАуры. X-Ray будет бесполезен как-то ведь на сервере стоит AntiXray. 
+                    Запрещены читы по тупу КиллАуры. X-Ray будет бесполезен как-то ведь на сервере стоит AntiXray.
                     Можно поставить бота по типу Baritone(я и самего использовал) но из-за AntiXray с добычей руд 
                     будут проблемы, или можно поставить что либо что могут отоброжат больше вещей, например 
                     ViewTrajectry. Приватов насервере нет, но гриферить не надо, будут разбирательства, в кайнем 
@@ -154,7 +174,7 @@
             <div class="gray4 razm2 anim" onclick="toggleBlock(this)">
                 <div class="text2 otsu anim">Дискорд</div>
                 <div class="textt otsd razm anim" style="height: 75px;overflow: hidden;" data-expanded-height="90px">
-                    Кроме общения через саму игру есть <a href="https://discord.gg/gHuFUXM5yy">дискорд сервер</a> 
+                    Кроме общения через саму игру есть <a href="https://discord.gg/gHuFUXM5yy">дискорд сервер</a>
                     (присутствовать обязятельно). Разделение на каналы: каналы "для всех" куда могут писать 
                     все (форум и войс тоже), "для игроков" куда могут писать только игроки и
                     "для игроков приватные" как для игроков но то что там происходит видно только игрокам.
@@ -165,7 +185,7 @@
             <div class="gray3" style="height: 25px;"></div>
         </div>
         <div class="gray2" style="height: 25px;"></div>
-        <div class="gray2">
+        <div class="gray2" id="voprosi">
             <div class="gray3 razm2 anim" style="margin-top: 0px;" onclick="toggleBlock(this)">
                 <div class="text2 otsu anim">Как поставить моды?</div>
                 <div class="textt otsd razm anim" style="height: 75px;overflow: hidden;" data-expanded-height="175px">
@@ -184,7 +204,7 @@
             <div class="gray3 razm2 anim" onclick="toggleBlock(this)">
                 <div class="text2 otsu anim">Как настроить скин на BlassingSkins?</div>
                 <div class="textt otsd razm anim" style="height: 75px;overflow: hidden;" data-expanded-height="145px">
-                    Если вы как и я решили поставить свой скин через BlessingSkins то вот как это делается. Вам 
+                    Если вы как и я решили поставить свой скин через BlessingSkins то вот как это делается. Вам
                     нужно зарегестрироваться на сайте и указать свой ник, учтите что если туда придёт человек 
                     с таким же ником но с лицензией то решение примут в его сторону. Дальше вам надо поставить
                     скин и по желанию плащ, можно выбрать скин из библиотеки, просто возьмите какой понравился, 

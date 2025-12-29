@@ -1,3 +1,18 @@
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+    color: #1b96e7;
+    text-decoration: underline;
+}
+
+
+#osn, #descript, #galler, #game, #voprosi {
+    scroll-margin-top: 39px;
+}
+
+
 .textt {
     width: 1015px;
     margin-left: auto;
@@ -135,17 +150,18 @@
 }
 
 .startanim {
+    background-position-y: center;
     animation: anim1 ease-out forwards;
-    animation-duration: 0.5s;
+    animation-duration: 1s;
 }
 
 @keyframes anim1 {
     0% {
-        background-position-y: top;
+        background-position-x: left;
     }
 
     100% {
-        background-position-y: center;
+        background-position-x: center;
     }
 }
 
@@ -157,24 +173,27 @@
 @keyframes anim2 {
     0% {
         opacity: 0;
-    }
-
-    25% {
-        transform: translateY(2vh);
-    }
-
-    75% {
-        transform: translateY(0vh);
+        transform: translateY(-2vh);
     }
 
     100% {
         opacity: 1;
+        transform: translateY(0vh);
     }
 }
 
-a {
-    color: #1b96e7;
-    text-decoration: underline;
+.startanim3 {
+    animation: anim3 ease-out;
+    animation-duration: 0.5s;
+}
+
+@keyframes anim3 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .uslov{
@@ -186,8 +205,15 @@ a {
 .button {
     background-color: #007a00;
     border-color: #005f00;
-    transition: 0.25s all linear;
+    transition: 0.15s all linear;
 }
 .button:hover {
     background-color: #006600;
+}
+
+.ssilk {
+    font-size: 16.5px;
+    padding: 0px 10px 0px 0px;
+    color: #EDEDED;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
