@@ -117,33 +117,25 @@
     opacity: 0;
 }
 
-.anims {
-    animation: anim linear forwards;
-    animation-duration: 0.75s;
+.anim_start {
+    animation: anim_start ease-out forwards;
+    animation-duration: 0.5s;
 
 }
 
-@keyframes anim {
+@keyframes anim_start {
     0% {
         opacity: 0;
         transform: translateY(2vh);
     }
-
-    25% {
-        transform: translateY(1vh);
-    }
-
-    75% {
-        transform: translateY(0vh);
-    }
-
     100% {
         opacity: 1;
+        transform: translateY(0vh);
     }
 }
 
 .startanim {
-    animation: anim1 linear forwards;
+    animation: anim1 ease-out forwards;
     animation-duration: 0.5s;
 }
 
@@ -158,13 +150,8 @@
 }
 
 .startanim2 {
-    animation: anim2 linear forwards;
+    animation: anim2 ease-out forwards;
     animation-duration: 0.5s;
-}
-
-a {
-    color: #1b96e7;
-    text-decoration: underline;
 }
 
 @keyframes anim2 {
@@ -185,9 +172,22 @@ a {
     }
 }
 
+a {
+    color: #1b96e7;
+    text-decoration: underline;
+}
 
 .uslov{
     width: 890px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.button {
+    background-color: #007a00;
+    border-color: #005f00;
+    transition: 0.25s all linear;
+}
+.button:hover {
+    background-color: #006600;
 }
